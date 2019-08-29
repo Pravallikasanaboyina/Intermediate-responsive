@@ -1,0 +1,271 @@
+/******** tag selectors ************/
+body {
+  margin: 0;
+}
+
+body .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#numbers, .community-div {
+  margin: 100px auto;
+}
+
+/*******************headings****************/
+.headings {
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+/********************* paragraphs **************/
+.para {
+  font-family: 'Open Sans';
+  color: hsl(192, 100%, 9%);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* responsive images for desktop and mobile */
+.mobile-bg-images {
+  display: none;
+  width: 100%;
+}
+
+.desktop-bg-images {
+  width: 100%;
+}
+
+/************ top section **************/
+#top {
+  padding: 40px 60px;
+}
+
+.top-right-button {
+  border-radius: 35px;
+  border-color: hsl(322, 100%, 66%);
+  background-color: #ffffff;
+  padding: 10px 40px;
+  color: hsl(322, 100%, 66%);
+  border-style: ridge;
+}
+
+/***************** top content section **********8*/
+.free-button {
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 35px;
+  padding: 10px 40px;
+  border-style: none;
+  color: #ffffff;
+  display: block;
+  margin: 40px auto;
+}
+
+.top-big-image {
+  max-width: 100%;
+}
+
+.top-content-div {
+  text-align: center;
+  padding: 50px 10px 30px;
+}
+
+/************* numbers section *************/
+.numbers-div {
+  text-align: center;
+}
+
+.numbers-headings {
+  font-size: 5rem;
+}
+
+.number-images {
+  margin-right: 150px;
+}
+
+.numbers-para {
+  font-family: 'Open Sans';
+  color: hsl(192, 100%, 9%);
+  font-size: 1.5rem;
+}
+
+/************ middle section **************/
+.middle-headings {
+  margin-left: 30px;
+}
+
+.middle-images {
+  max-width: 70%;
+}
+
+.middle-col {
+  padding-top: 80px;
+}
+
+.m-one {
+  background-color: hsl(207, 100%, 98%);
+}
+
+.col2, .col3, .col6 {
+  text-align: center;
+}
+
+/************ community div **************/
+.community-div {
+  text-align: center;
+}
+
+/************** bottom section *************/
+#bottom .col-lg-6 {
+  padding: 40px 0px 20px 170px;
+}
+
+.bottom-div {
+  color: white;
+  background-color: hsl(192, 100%, 9%);
+}
+
+.bottom-huddle {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+.bottom-left {
+  display: inline;
+  margin-left: 20px;
+}
+
+.bottom-logos {
+  margin: 20px 10px 20px;
+}
+
+.bottom-para {
+  width: 70%;
+  margin: 30px 0;
+  font-family: 'Open Sans';
+}
+
+.bottom-textbox {
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.newsletter {
+  font-size: 1.7rem;
+}
+
+.subscribe {
+  background-color: hsl(322, 100%, 66%);
+  border-style: none;
+  padding: 10px 60px;
+  color: white;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+/************ mediaquery for tab *************/
+@media (max-width:990px) {
+
+  /* bg images */
+  .mobile-bg-images {
+    display: inline;
+  }
+
+  .desktop-bg-images {
+    display: none;
+  }
+
+  /* middle */
+  .col1, .col5 {
+    order: 2;
+  }
+
+  .col2, .col6 {
+    order: 1;
+  }
+
+  .middle-headings {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .middle-para {
+    text-align: center;
+  }
+
+  /* bottom */
+  #bottom .col-lg-6 {
+    margin-top: 100px;
+    padding: 0;
+  }
+
+  .bottom-div {
+    display: flex;
+    padding-left: 100px;
+  }
+
+  .bottom-right-col {
+    order: 1;
+  }
+
+  .bottom-left-col {
+    order: 2;
+  }
+
+  .bottom-textbox {
+    margin-bottom: 30px;
+  }
+}
+
+/******** mediaquery for phone *********/
+@media (max-width:500px) {
+
+  /* top section */
+  #top {
+    padding: 30px 5px;
+  }
+
+  #top .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #top-content .headings {
+    font-size: 2rem;
+  }
+
+  .top-right-button {
+    padding: 5px 20px;
+  }
+
+  .top-logo {
+    width: 150px;
+  }
+
+  .top-image-div {
+    display: flex;
+    align-items: center;
+  }
+
+  /* middle section */
+  #middle .middle-headings {
+    font-size: 1.5rem;
+  }
+
+  /* community div */
+  .community-div .headings {
+    font-size: 2rem;
+  }
+
+  /* bottom section */
+  .bottom-para {
+    width: 80%;
+  }
+
+  .subscribe {
+    margin-left: 100px;
+  }
+}
