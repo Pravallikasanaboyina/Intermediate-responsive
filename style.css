@@ -127,11 +127,6 @@ body .row {
   background-color: hsl(192, 100%, 9%);
 }
 
-.bottom-huddle {
-  font-family: 'Poppins';
-  font-weight: 700;
-}
-
 .bottom-left {
   display: inline;
   margin-left: 20px;
